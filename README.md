@@ -21,7 +21,7 @@ Firebase Firestore 사용하여 데이터베이스 구축
 - Notification
     - D-Day 일 때 알림
     - Timer 동작 중 홈버튼을 눌러 Timer  벗어났을 때 알림
-- Timer 사용한 내역 현재시간, 집중했던시간 기록
+- Timer 사용한 내역 Timer 시작 시간, 집중했던 시간 기록
 - 기록된 데이터를 보기 쉽게 그래프 표시 ( MPAndroidChart library - bar chart )
 - 메모
     - 추가, 수정, 삭제

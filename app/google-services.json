@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "939268220529",
+    "firebase_url": "https://focustime-99aab.firebaseio.com",
+    "project_id": "focustime-99aab",
+    "storage_bucket": "focustime-99aab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939268220529:android:7f8f6e40ff089baa899dd0",
+        "android_client_info": {
+          "package_name": "com.example.focustime"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939268220529-rnbi1ca4e49mijofrtbmc0g65pcecbai.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.focustime",
+            "certificate_hash": "faf6da5261a9c3d0392ff26a92fa2946cf061598"
+          }
+        },
+        {
+          "client_id": "939268220529-ec6g431end437l0c271kcc1fk4o99tla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAABlQS3S5WYX-2tyWzX4c1P33yVZIZJsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939268220529-ec6g431end437l0c271kcc1fk4o99tla.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

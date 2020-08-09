@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Activity.TimerActivity">
+
+
+    <LinearLayout
+        android:id="@+id/countLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="80dp"
+            android:text="00:00"
+            android:textColor="@android:color/black"
+            android:textSize="70sp" />
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/button_start_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/countLinear"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/ic_play_arrow_black_24dp" />
+
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_below="@+id/countLinear"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/button_start_pause"
+        android:text="reset"
+        android:textSize="20dp"
+        android:background="#EE7067"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/userNameCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_start_pause"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:background="#fff"
+        android:visibility="invisible"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/famousAdvice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:text="명언"
+                android:textSize="15sp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:maxEms="2" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="200dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="#6BDDCDCD" />
+
+            <TextView
+                android:id="@+id/currentUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="12dp"
+                android:text="UserName" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/give_up_cardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userNameCardView"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="#F7DEDC">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                app:srcCompat="@drawable/ic_undo_orange_24dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="2dp"
+                android:text=" GIVE UP"
+                android:textColor="#6D6969"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/dl_main_drawer_root"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:openDrawer="start">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="110dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp">
+
+            <ImageView
+                android:id="@+id/user_picture"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_loupe_24dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:text="Email"
+                android:textColor="#F0F57B53"
+                android:textSize="22sp"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:id="@+id/userEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView6"
+                android:layout_marginLeft="40dp"
+                android:padding="5dp"
+                android:text="유저 이메일"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/a"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userEmail"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:text="Name"
+                android:textColor="#F0F57B53"
+                android:textSize="22sp"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/a"
+                android:layout_marginLeft="40dp"
+                android:padding="5dp"
+                android:text="이 름"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_name"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:text="PhoneNumber"
+                android:textColor="#F0F57B53"
+                android:textSize="22sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/user_phoneNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/b"
+                android:layout_marginLeft="40dp"
+                android:padding="5dp"
+                android:text="010-1234-7848"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:id="@+id/c"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_phoneNumber"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:text="Address"
+                android:textColor="#F0F57B53"
+                android:textSize="22sp"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:id="@+id/user_address"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/c"
+                android:layout_marginLeft="40dp"
+                android:padding="5dp"
+                android:text="주소"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+<!--
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="#F0574C" />
+-->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemBackground="@color/colorPrimary"
+            app:itemIconTint="@android:color/white"
+            app:itemTextColor="@android:color/white"
+            app:menu="@menu/bottom_nav_menu"
+            android:layout_marginTop="2dp"
+            />
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/mainButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_home_orange_24dp" />
+
+            <ImageView
+                android:id="@+id/storageButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_storage_orange_24dp" />
+
+            <ImageView
+                android:id="@+id/settingButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_person_24dp" />
+
+
+        </LinearLayout>
+            -->
+    </LinearLayout>
+
+        <!-- navigation drawer-->
+
+
+        <include
+            layout="@layout/activity_main_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/nv_main_navigation_root"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            android:visibility="visible"
+            app:headerLayout="@layout/nav_header_main"
+            app:menu="@menu/drawer" />
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+    <include
+        layout="@layout/view_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

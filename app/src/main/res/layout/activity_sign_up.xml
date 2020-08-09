@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_color"
+    android:orientation="vertical"
+    tools:context=".Activity.SignUpActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="100dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="SIGN UP"
+                android:textColor="#fff"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!--
+    <EditText
+        android:id="@+id/signUpNameEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:hint="User name"
+        android:inputType="textPersonName"
+        android:textColorHint="#fff" />
+
+           -->
+
+        <!--
+
+        <Button
+            android:id="@+id/email_send"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="#EE7067"
+            android:text="이메일 인증"
+            android:textColor="#fff"
+            android:layout_marginLeft="120dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="5dp"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+      -->
+
+        <EditText
+            android:id="@+id/signUpEmailEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#fff"
+            android:textColorHint="#fff" />
+
+
+        <EditText
+            android:id="@+id/signUpPasswordEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#fff"
+            android:textColorHint="#fff" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/SignUpBtn"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#EE7067"
+                android:text="NEXT"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+
+            <Button
+                android:id="@+id/returnLoginBtn"
+                android:layout_width="210dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SignUpBtn"
+                android:layout_centerInParent="true"
+                android:backgroundTint="#EE7067"
+                android:text="Return to Login"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

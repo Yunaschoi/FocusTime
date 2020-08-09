@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:title="My D-day">
+
+        <menu>
+
+            <item
+                android:id="@+id/select_dday"
+                android:icon="@drawable/ic_action_dday"
+                android:title="D-day 설정"
+                />
+
+
+            <item
+                android:id="@+id/delete_dday"
+                android:icon="@drawable/ic_action_delete"
+                android:title="D-day 삭제"
+                />
+        </menu>
+    </item>
+
+    <item
+        android:title="Manage">
+
+        <menu>
+            <item
+                android:id="@+id/item1"
+                android:icon="@drawable/ic_action_memo"
+                android:title="메모장"
+                />
+            <item
+                android:id="@+id/weekData"
+                android:icon="@drawable/ic_action_graph"
+                android:title="기록지"
+                />
+
+
+        </menu>
+    </item>
+
+    <item android:title="Setting">
+
+    <menu>
+
+
+        <item
+            android:id="@+id/item2"
+            android:icon="@drawable/ic_action_build"
+            android:title="비밀번호 변경"
+            />
+
+
+        <item
+            android:id="@+id/item3"
+            android:icon="@drawable/ic_action_back"
+            android:title="로그아웃"
+            />
+
+        <item
+            android:id="@+id/item4"
+            android:icon="@drawable/ic_action_bye"
+            android:title="회원탈퇴"
+            />
+    </menu>
+
+    </item>
+
+</menu>

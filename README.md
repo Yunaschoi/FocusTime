@@ -24,5 +24,4 @@ Firebase Firestore 사용하여 데이터베이스 구축
 - Timer 사용한 내역 Timer 시작 시간, 집중했던 시간 기록
 - 기록된 데이터를 보기 쉽게 그래프 표시 ( MPAndroidChart library - bar chart )
 - 메모
-    - 추가, 수정, 삭제
     - 정렬기능 ( 등록시간순, 등록시간 역순, 가나다 순, 가나다 역순 ) 

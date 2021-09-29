@@ -1,4 +1,4 @@
-# FocusTime 안드로이드 어플 
+# FocusTime
 집중력이 떨어지는 사람들을 위해 목표 시간을 정해서 공부하는 뽀모도로 공부법을 적용한 앱 입니다.
 
 시연 영상주소 : https://youtu.be/2-bMXPI6D3E
@@ -9,7 +9,8 @@
 
 ### 주요기능
 
-Firebase Firestore 사용하여 데이터베이스 구축
+Firebase Firestore 사용
+
 - 회원가입
     - 이메일 인증
 - 로그인
